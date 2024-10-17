@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1150/1150381.png" type="image/x-icon">
+    <title>SAQUE FANTASMA | Home</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1A1F3B; /* Cor de fundo para toda a página */
+            color: white; /* Cor de texto para toda a página */
+            overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+        }
+
+        #header { /* Cabeçalho */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background-color: #2C2F4B; /* Cor do cabeçalho */
+        }
+
+        #site-title { /* Cabeçalho */
+            font-size: 24px;
+            font-weight: bold;
+            color: white; /* Cor do título do site */
+        }
+
+        #menu { /* Cabeçalho */
+            display: flex;
+        }
+
+        #menu a { /* Cabeçalho */
+            margin-left: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            width: 100%;
+            box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+        }
+
+        #main-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 16px 0;
+            color: white; /* Cor de texto para o título */
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 16px;
+            margin: 16px;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            max-width: 400px; /* Define uma largura máxima para as cartas */
+            box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+            transition: background-color 0.3s;
+        }
+
+        .card:hover {
+            background-color: #3C3F5F; /* Cor de fundo mais escura ao passar o mouse */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<!-- Cabeçalho -->
+<body>
+    <div id="header">
+        <div id="site-title">SAQUE FANTASMA</div>
+        <div id="menu">
+            <a href="https://t.me/NDBIGODE" target="_blank">Telegram</a>
+        </div>
+    </div>
+<!-- Fim do Cabeçalho -->
+
+    <div id="app">
+        <br>
+        <h1 id="main-title">Escolha uma das opções abaixo:</h1>
+        <br>
+        
+        <div class="card-container">
+            <a href="../Gerador/index.html" class="card">
+                <h2>Gerador</h2>
+                <p>Gerador de Cartões de Crédito</p>
+            </a>
+
+            <a href="../Bins/bins.html" class="card">
+                <h2>Bins</h2>
+                <p>Consulte algumas BINS específicas</p>
+            </a>
+
+            <a href="../Dados/kitbico.html" class="card">
+                <h2>Dados</h2>
+                <p>Gerador de Dados</p>
+            </a>
+
+            <div class="card">
+                <a href="../Luhn/index.html">
+                <h2>Luhn Validator</h2>
+                <p>Verifique se o Cartão é válido</p>
+            </div>
+        </div>
+    </div>
+</a>
+
+    <script>
+        function redirectToGenerator() {
+            window.location.href = 'ruta_de_tu_pagina_generadora.html';
+        }
+    </script>
+</body>
+</html>
