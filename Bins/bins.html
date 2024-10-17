@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAQUE FANTASMA | Bins</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1150/1150381.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- partial:index.partial.html -->
+<a href="../Home/index.html" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  <!-- partial -->
+
+<body>
+    <div class="container">
+        <h1>Selecione uma BIN</h1>
+        <select id="binSelect" onchange="showCopyButton()">
+            <option value="">Escolha uma BIN</option>
+            <option value="4660xx">iFood</option>
+            <option value="bin2">Bin 2</option>
+            <option value="bin3">Bin 3</option>
+            <!-- Adicione mais bins aqui -->
+        </select>
+        <div id="result" class="result" style="display: none;"></div>
+        <button id="copyButton" onclick="copyBin()" style="display: none;">Copiar<i class="fas fa-copy"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

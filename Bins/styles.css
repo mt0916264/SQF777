@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1F3B;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Aumentando a largura do container */
+}
+
+.menu-btn {
+    position: fixed; /* Altera a posição para fixa */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    background: #2C2F4B;
+    width: 27px;
+    height: auto;
+    padding: 10px;
+    display: block;
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+.menu-btn span {
+    width: 100%;
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.menu-btn span:first-child {
+    margin-top: 0;
+}
+.menu-btn:hover span:first-child {
+    transform: rotate(-45deg) translate(-6px, 2px);
+    width: 15px;
+}
+.menu-btn:hover span:last-child {
+    transform: rotate(45deg) translate(-6px, -2px);
+    width: 15px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+select {
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    width: 100%; /* Faz o select ocupar toda a largura do container */
+    margin-bottom: 20px; /* Espaçamento abaixo do select */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ececec; /* Nova cor de fundo */
+    user-select: none; /* Impede a seleção do texto */
+}
+
+button {
+    margin-top: 10px;
+    padding: 15px; /* Aumentando o padding do botão */
+    border: none;
+    border-radius: 8px;
+    background-color: #635bff; /* Mudando a cor de fundo do botão */
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Faz o botão ocupar toda a largura do container */
+    font-size: 16px;
+    position: relative; /* Necessário para posicionar o ícone */
+    text-align: center; /* Centraliza o texto */
+}
+
+button i {
+    position: absolute; /* Permite posicionar o ícone */
+    right: 15px; /* Coloca o ícone no canto direito */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição do ícone */
+}
+
+button:hover {
+    background-color: #5851e6; /* Cor ao passar o mouse */
+}
+
+button:focus:not(:disabled) {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99,91,255,0.2);
+}
+
+button:active:not(:disabled) {
+    background-color: #4f47d8;
+}
+
+button.copied {
+    background-color: #b3b3b3; /* Cor verde para indicar que a bin foi copiada */
+    cursor: not-allowed; /* Muda o cursor para indicar que não é clicável */
+}
